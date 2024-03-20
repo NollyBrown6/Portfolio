@@ -1,5 +1,6 @@
 // import frameworks and libraries
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 // import UI Components
 // eslint-disable-next-line import/no-extraneous-dependencies
@@ -20,21 +21,21 @@ function Header() {
         </h1>
       </div>
       <nav className="navbar-container">
-        <a href="/about">
+        <NavLink to="/about">
           <button className="button" type="button">À propos</button>
-        </a>
-        <a href="experience">
+        </NavLink>
+        <NavLink to="experience">
           <button className="button" type="button">Formation</button>
-        </a>
-        <a href="/projects">
+        </NavLink>
+        <NavLink to="/projects">
           <button className="button" type="button">Projets</button>
-        </a>
-        <a href="/sandbox">
+        </NavLink>
+        <NavLink to="/sandbox">
           <button className="button" type="button">Sandbox</button>
-        </a>
-        <a href="/contact">
+        </NavLink>
+        <NavLink to="/contact">
           <button className="button" type="button">Contact</button>
-        </a>
+        </NavLink>
       </nav>
       <div className="locale-toggler-container">
         <LocaleToggler />

@@ -1,5 +1,6 @@
 // import frameworks and libraries
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 // import UI Components
 
@@ -27,13 +28,13 @@ function HomeContent() {
           </div>
           <div className="separator h-m" />
           <div className="btns-container">
-            <a href="/">
+            <NavLink to="/about">
               <button className="button" type="button">À propos</button>
-            </a>
+            </NavLink>
             <div className="separator v-m" />
-            <a href="/">
+            <NavLink to="/Contact">
               <button className="button" type="button">Contact</button>
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>
