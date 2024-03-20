@@ -1,0 +1,76 @@
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  height: 70vh;
+  margin: auto;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 50%;
+  align-self: center;
+  align-items: center;
+  justify-content: center;  
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  justify-content: center;
+  padding: 1rem;
+  padding-left: 2rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  color: white
+}
+
+.hero-subtitle-container {
+  width: 100%;
+}
+
+.hero-subtitle {
+  display: inline-flex;
+  font-size: 1.5rem;
+  color: white;
+  width: 62%;
+  animation: typing 3s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+}
+
+.btns-container {
+  display: flex;
+  width: 100%;
+  justify-content: left;
+}
+
+.animation-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+}
+
+
+
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  60% {
+    border-color: transparent
+  }
+}
