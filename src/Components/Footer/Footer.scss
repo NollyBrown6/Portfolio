@@ -1,0 +1,40 @@
+@use '../../../public/style/variables.scss' as v;
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright-container {
+  width: 50%;
+  font-size: 1.3rem;
+  color: white;
+  
+}
+
+.social-container {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social-content {
+  display: flex;
+  height: 3rem;
+  align-items: center;
+  color: v.$main-text-darker-bg-color;
+  text-decoration: none;
+}
+
+.social-content:hover {
+  color: v.$main-element-highlight-color;
+  text-decoration: none;
+}
