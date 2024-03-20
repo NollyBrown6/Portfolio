@@ -4,16 +4,22 @@ import React from 'react';
 // import UI Components
 
 // import custom Components
+import Header from './Components/Header/Header.tsx';
+import Footer from './Components/Footer/Footer.tsx';
 
 // import stylesheets
 import './App.css';
 
 function App() {
   return (
-    <div>
-      <p>
-        Hello World!
-      </p>
+    <div className="app-container">
+      <div className="header">
+        <Header />
+      </div>
+      <div className="body" />
+      <div className="footer">
+        <Footer />
+      </div>
     </div>
   );
 }
