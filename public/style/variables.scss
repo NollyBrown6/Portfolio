@@ -1,0 +1,79 @@
+//* IMPORT FONTS *//
+
+@font-face {
+  font-family: 'oswald';
+  src: url('../../src/assets/fonts/oswald/Oswald-Bold.ttf') format('truetype'),
+       url('../../src/assets/fonts/oswald/Oswald-Light.ttf') format('truetype'), 
+       url('../../src/assets/fonts/oswald/Oswald-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'source-sans-pro';
+  src: url('../../src/assets/fonts/source-sans-pro/SourceSansPro-Black.otf'),
+       url('../../src/assets/fonts/source-sans-pro/SourceSansPro-Bold.otf'),
+       url('../../src/assets/fonts/source-sans-pro/SourceSansPro-ExtraLight.otf'),
+       url('../../src/assets/fonts/source-sans-pro/SourceSansPro-It.otf'),
+       url('../../src/assets/fonts/source-sans-pro/SourceSansPro-Light.otf'),
+       url('../../src/assets/fonts/source-sans-pro/SourceSansPro-Regular.otf'),
+       url('../../src/assets/fonts/source-sans-pro/SourceSansPro-Semibold.otf');   
+}
+
+//* ------------------------ *// 
+
+//* APP STYLING *//
+
+// fonts
+$main-font-family: 'source-sans-pro';
+$highlight-font-family: 'oswald';
+
+// colors
+$main-text-darker-bg-color: #F0F0F0;
+$main-element-highlight-color: #535bf2;
+
+// separators
+$vertical-separator-s: 1.5rem; // width
+$vertical-separator-m: 2.5rem; // width
+$vertical-separator-l: 2.5rem; // width
+$horizontal-separator-s: 1rem; // height
+$horizontal-separator-m: 2rem; // height
+$horizontal-separator-l: 3rem; // height
+
+
+
+
+//* ------------------------ *// 
+
+//* LINKS STYLING *//
+
+// font
+$links-font-weight: 300;
+// colors
+$links-text-color: $main-text-darker-bg-color;
+// effects
+$links-text-color-on-hover: $main-element-highlight-color;
+
+
+
+//* ------------------------ *// 
+
+//* BUTTONS STYLING *//
+
+// dimensions
+$generic-btn-width: 8rem;
+$generic-btn-height: 3rem;
+// style
+$generic-btn-border-radius: 8px;
+$generic-btn-border-radius-border: 1px solid transparent;
+$generic-btn-padding: 0.4rem 0.8rem;
+// font 
+$generic-btn-font-size: 1.3rem;
+$generic-btn-font-weight: 300;
+$generic-btn-text-color: $main-text-darker-bg-color;
+
+// colors
+$generic-btn-bg-color: #1a1a1a;
+$generic-btn-border-color-hover: $main-element-highlight-color;
+
+// effects
+$generic-btn-transition: border-color 0.25s;
+$generic-btn-border-outline-focus: 4px auto -webkit-focus-ring-color;
