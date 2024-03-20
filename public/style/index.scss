@@ -1,0 +1,86 @@
+@use './reset.scss';
+@use './variables.scss' as v;
+
+/* GENERAL  */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100vh;
+  font-family: v.$main-font-family;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 100vh;
+  width: 100vw;
+  min-width: 100vw;
+  flex-grow: 1;
+  background-image: repeating-linear-gradient(135deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(22.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(194,74%,56%),hsl(266,74%,56%),hsl(338,74%,56%),hsl(50,74%,56%),hsl(122,74%,56%));
+}
+
+.separator {
+  &.h-s {
+    height: v.$horizontal-separator-s;
+  }
+  &.h-m {
+    height: v.$horizontal-separator-m;
+  }
+  &.h-l {
+    height: v.$horizontal-separator-l;
+  }
+  &.v-s {
+    width: v.$vertical-separator-s;
+  }
+  &.v-m {
+    width: v.$vertical-separator-m;
+  }
+  &.v-l {
+    width: v.$vertical-separator-l;
+  }
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+a {
+  font-weight: v.$links-font-weight;
+  color: v.$links-text-color;
+  text-decoration: none;
+}
+a:hover {
+  color: v.$links-text-color-on-hover;
+  text-decoration: none;
+}
+
+.button {
+  width: v.$generic-btn-width;
+  height: v.$generic-btn-height;
+  border-radius: v.$generic-btn-border-radius;
+  border: v.$generic-btn-border-radius-border;
+  padding: v.$generic-btn-padding;
+  font-size: v.$generic-btn-font-size;
+  font-weight: v.$generic-btn-font-weight;
+  color: v.$generic-btn-text-color;
+  background-color: v.$generic-btn-bg-color;
+  cursor: pointer;
+  transition: v.$generic-btn-transition;
+}
+
+
+.button:hover {
+  border-color: v.$generic-btn-border-color-hover;
+}
+.button:focus,
+.button:focus-visible {
+  outline: v.$generic-btn-border-outline-focus;
+}
+
+/* RESPONSIVE */
+  /* add media queries here*/
