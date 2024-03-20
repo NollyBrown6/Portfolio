@@ -8,6 +8,7 @@ import React from 'react';
 
 // import stylesheets
 import './Header.scss';
+import LocaleToggler from './LocaleToggler/LocaleToggler.tsx';
 
 function Header() {
   return (
@@ -35,6 +36,9 @@ function Header() {
           <button className="button" type="button">Contact</button>
         </a>
       </nav>
+      <div className="locale-toggler-container">
+        <LocaleToggler />
+      </div>
     </div>
   );
 }
