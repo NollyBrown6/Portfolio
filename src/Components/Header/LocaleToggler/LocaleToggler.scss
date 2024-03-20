@@ -1,0 +1,30 @@
+@use '../../../../public/style/variables.scss' as v;
+
+.rs-dropdown-toggle {
+  width: 10rem;
+  height: v.$generic-btn-height;
+  
+  &.rs-btn {
+    background-color: transparent;
+    color: v.$main-text-darker-bg-color;
+    display: flex;
+    justify-content: center;
+    border: none;
+  }
+  &.rs-btn:hover {
+    height: v.$generic-btn-height;
+    background-color: transparent;
+  }
+}
+
+.rs-dropdown-toggle:hover {
+  background-color: transparent;
+  color: v.$main-text-darker-bg-color;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+
+.rs-ripple {
+  background-color: v.$generic-btn-bg-color;
+}
